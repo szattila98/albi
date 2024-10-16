@@ -15,6 +15,8 @@
     "vue-router": "4.4.5"
   },
   "devDependencies": {
-    "@pinia/nuxt": "^0.5.5"
+    "@nuxtjs/i18n": "^8.5.5",
+    "@pinia/nuxt": "^0.5.5",
+    "@vueuse/nuxt": "^11.1.0"
   }
 }

@@ -8,5 +8,5 @@ export default defineNuxtConfig({
   pinia: {
     storesDirs: ["./stores/**"],
   },
-  modules: ["@pinia/nuxt"],
+  modules: ["@pinia/nuxt", "@vueuse/nuxt", "@nuxtjs/i18n"],
 });
