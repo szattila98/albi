@@ -1,5 +1,19 @@
 {
-    "cSpell.words": [
-        "nuxt"
-    ]
+	"eslint.useFlatConfig": true,
+	"editor.formatOnSave": true,
+	"css.validate": false,
+	"scss.validate": false,
+	"stylelint.validate": [ "css", "scss", "vue" ],
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": "explicit",
+		"source.fixAll.stylelint": "explicit"
+	},
+	"typescript.inlayHints.parameterNames.enabled": "all",
+	"typescript.inlayHints.variableTypes.enabled": false,
+	"typescript.inlayHints.functionLikeReturnTypes.enabled": false,
+	"typescript.inlayHints.parameterTypes.enabled": true,
+	"typescript.inlayHints.enumMemberValues.enabled": true,
+	"vue.inlayHints.missingProps": true,
+	"vue.inlayHints.inlineHandlerLeading": true,
+	"cSpell.words": ["nuxt", "nuxtjs", "stylelint", "vueuse"]
 }
