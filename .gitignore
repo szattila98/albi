@@ -5,6 +5,8 @@
 .nitro
 .cache
 dist
+dist-ssr
+*.local
 
 # Node dependencies
 node_modules
@@ -12,6 +14,11 @@ node_modules
 # Logs
 logs
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
 # Misc
 .DS_Store
@@ -23,5 +30,16 @@ logs
 .env.*
 !.env.example
 
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
 .yarn/*
-.stylelintcache

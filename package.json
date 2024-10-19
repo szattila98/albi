@@ -1,33 +1,13 @@
 {
-	"name": "nuxt-app",
-	"private": true,
-	"type": "module",
-	"scripts": {
-		"build": "nuxt build",
-		"dev": "nuxt dev --open",
-		"generate": "nuxt generate",
-		"preview": "nuxt preview",
-		"postinstall": "nuxt prepare",
-		"format": "prettier --check .",
-		"format:fix": "prettier --write .",
-		"lint": "eslint .",
-		"lint:fix": "eslint . --fix"
-	},
-	"dependencies": {
-		"nuxt": "3.13.2",
-		"vue": "3.5.12",
-		"vue-router": "4.4.5"
-	},
-	"devDependencies": {
-		"@nuxt/eslint": "0.6.0",
-		"@nuxtjs/i18n": "8.5.5",
-		"@nuxtjs/stylelint-module": "5.2.0",
-		"@pinia/nuxt": "0.5.5",
-		"@vue/eslint-config-prettier": "10.0.0",
-		"@vueuse/nuxt": "11.1.0",
-		"eslint": "9.12.0",
-		"npm-run-all2": "6.2.4",
-		"postcss-html": "1.7.0",
-		"prettier": "3.3.3"
-	}
+  "name": "albi",
+  "workspaces": [
+    "./albi-*"
+  ],
+  "scripts": {
+    "build": "yarn workspace albi-web build && yarn workspace albi-native tauri build"
+  },
+  "volta": {
+    "node": "22.10.0",
+    "yarn": "4.5.1"
+  }
 }

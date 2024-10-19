@@ -15,5 +15,11 @@
 	"typescript.inlayHints.enumMemberValues.enabled": true,
 	"vue.inlayHints.missingProps": true,
 	"vue.inlayHints.inlineHandlerLeading": true,
-	"cSpell.words": ["nuxt", "nuxtjs", "stylelint", "vueuse"]
+	"cSpell.words": [
+		"nuxt",
+		"nuxtjs",
+		"stylelint",
+		"tauri",
+		"vueuse"
+	]
 }
