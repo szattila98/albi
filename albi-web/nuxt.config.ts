@@ -13,5 +13,12 @@ export default defineNuxtConfig({
 	},
 	eslint: {
 		checker: true
+	},
+	vite: {
+		resolve: {
+			alias: {
+				'@shared': '../shared' // Relative path to the sibling directory
+			}
+		}
 	}
 });

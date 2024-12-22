@@ -1,0 +1,11 @@
+{
+	"name": "@albi-shared/app-button",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "yarn run -T vite",
+		"build": "yarn run -T vue-tsc -p '../../tsconfig.app.json' && yarn run -T vite build",
+		"preview": "yarn run -T vite preview"
+	}
+}

@@ -4,7 +4,22 @@
     "./albi-*"
   ],
   "scripts": {
-    "build": "yarn workspace albi-web build && yarn workspace albi-native tauri build"
+    "build": "yarn workspace albi-shared build && yarn workspace albi-web build && yarn workspace albi-native tauri build"
+  },
+  "dependencies": {
+    "vue": "3.5.13"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "5.2.1",
+    "@vue/eslint-config-prettier": "10.1.0",
+    "@vue/eslint-config-typescript": "14.1.4",
+    "@vue/tsconfig": "0.7.0",
+    "eslint": "9.17.0",
+    "prettier": "3.4.2",
+    "sass": "1.83.0",
+    "typescript": "5.6.3",
+    "vite": "6.0.5",
+    "vue-tsc": "2.1.10"
   },
   "volta": {
     "node": "22.10.0",

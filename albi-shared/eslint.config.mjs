@@ -1,10 +1,10 @@
-// @ts-check
-import withNuxt from './.nuxt/eslint.config.mjs';
 import prettierConfig from '@vue/eslint-config-prettier';
 import vueTsEslintConfig from '@vue/eslint-config-typescript';
 
-export default withNuxt(
-	// @ts-expect-error - something is fishy with the withNuxt type definition, so the error is ignored
+export default [
+	{
+		ignores: ['eslint.config.mjs']
+	},
 	...vueTsEslintConfig({ extends: ['recommendedTypeChecked', 'stylisticTypeChecked'] }),
 	{
 		languageOptions: {
@@ -33,4 +33,4 @@ export default withNuxt(
 			'vue/no-multiple-template-root': 'off'
 		}
 	}
-);
+];
