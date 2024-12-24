@@ -46,6 +46,11 @@ withDefaults(defineProps<Props>(), {
 		&:active {
 			background: $color-secondary;
 		}
+
+		&:disabled {
+			background: $disabled;
+			cursor: auto;
+		}
 	}
 
 	&.danger {
@@ -63,6 +68,11 @@ withDefaults(defineProps<Props>(), {
 
 		&:active {
 			background: $active-danger;
+		}
+
+		&:disabled {
+			background: $disabled;
+			cursor: auto;
 		}
 	}
 }

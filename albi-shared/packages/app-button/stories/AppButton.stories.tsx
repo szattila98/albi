@@ -2,10 +2,12 @@ import type { Meta, StoryObj } from '@storybook/vue3';
 
 import { AppButton, AppButtonTheme } from '../src/lib';
 import { defineComponent } from 'vue';
+import { fn } from '@storybook/test';
 
 const meta: Meta<typeof AppButton> = {
 	title: 'Components/AppButton',
 	component: AppButton,
+	args: { onClick: fn() },
 	argTypes: {
 		theme: {
 			control: 'select',
