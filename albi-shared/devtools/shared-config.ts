@@ -15,6 +15,15 @@ export const withSharedConfig = (customConfig: UserConfig = {}) => {
 			rollupOptions: {
 				external: ['vue']
 			}
+		},
+		css: {
+			preprocessorOptions: {
+				scss: {
+					additionalData: `
+						@use '@albi-shared/style-utils/dist/variables' as *;
+					`
+				}
+			}
 		}
 	});
 	return mergeConfig(sharedConfig, customConfig);

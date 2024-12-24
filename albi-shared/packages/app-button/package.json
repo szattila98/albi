@@ -3,9 +3,13 @@
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
+	"main": "./dist/app-button.js",
 	"scripts": {
 		"dev": "yarn run -T vite",
 		"build": "yarn run -T vue-tsc -p '../../tsconfig.app.json' && yarn run -T vite build",
 		"preview": "yarn run -T vite preview"
+	},
+	"dependencies": {
+		"@albi-shared/style-utils": "workspace:*"
 	}
 }

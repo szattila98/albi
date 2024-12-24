@@ -1,0 +1,8 @@
+{
+	"name": "@albi-shared/style-utils",
+	"private": true,
+	"version": "0.0.0",
+	"scripts": {
+		"build": "rm -rf dist && cp -a src/. dist"
+	}
+}

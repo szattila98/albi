@@ -13,14 +13,9 @@ function getAbsolutePath(value: string) {
 }
 
 const config: StorybookConfig = {
-	stories: [
-		'../stories/**/*.mdx',
-		'../stories/**/*.stories.@(js|jsx|mjs|ts|tsx)',
-		'../packages/*/stories/**/*.mdx',
-		'../packages/*/stories/**/*.stories.@(js|jsx|mjs|ts|tsx)'
-	],
+	stories: ['../**/stories/**/*.mdx', '../**/stories/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
+	staticDirs: ['./static'],
 	addons: [
-		getAbsolutePath('@storybook/addon-onboarding'),
 		getAbsolutePath('@storybook/addon-essentials'),
 		getAbsolutePath('@chromatic-com/storybook'),
 		getAbsolutePath('@storybook/addon-interactions')
@@ -33,7 +28,16 @@ const config: StorybookConfig = {
 		return mergeConfig(
 			config,
 			defineConfig({
-				plugins: [vue(), vueJsx()]
+				plugins: [vue(), vueJsx()],
+				css: {
+					preprocessorOptions: {
+						scss: {
+							additionalData: `
+								@use '@albi-shared/style-utils/dist/variables' as *;
+							`
+						}
+					}
+				}
 			})
 		);
 	}

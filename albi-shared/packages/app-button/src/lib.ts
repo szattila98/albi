@@ -1,2 +1,3 @@
 import AppButton from './components/AppButton.vue';
-export { AppButton };
+import { AppButtonTheme } from './constants/AppButton.const';
+export { AppButton, AppButtonTheme };
