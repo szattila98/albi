@@ -17,5 +17,8 @@
   "typescript.inlayHints.enumMemberValues.enabled": true,
   "vue.inlayHints.missingProps": true,
   "vue.inlayHints.inlineHandlerLeading": true,
-  "cSpell.words": ["nuxt", "nuxtjs", "stylelint", "tauri", "vueuse"]
+  "cSpell.words": ["nuxt", "nuxtjs", "stylelint", "tauri", "vueuse"],
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "vue.features.completion.autoImportComponent": false,
+  "vue.languageServer.tsPlugin": true
 }

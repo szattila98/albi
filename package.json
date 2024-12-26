@@ -4,7 +4,8 @@
     "./albi-*"
   ],
   "scripts": {
-    "build": "yarn workspace albi-shared build && yarn workspace albi-web build && yarn workspace albi-native tauri build",
+    "build": "yarn build:shared && yarn workspace albi-web build && yarn workspace albi-native tauri build",
+    "build:shared": "yarn workspace albi-shared build",
     "prepare": "husky"
   },
   "dependencies": {

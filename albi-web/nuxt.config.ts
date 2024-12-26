@@ -12,13 +12,6 @@ export default defineNuxtConfig({
 		storesDirs: ['./stores/**']
 	},
 	eslint: {
-		checker: true
-	},
-	vite: {
-		resolve: {
-			alias: {
-				'@shared': '../shared' // Relative path to the sibling directory
-			}
-		}
+		checker: false
 	}
 });

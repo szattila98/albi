@@ -5,5 +5,4 @@ interface LoginRequest {
 
 export default defineEventHandler(async (event) => {
 	const body = await readBody<LoginRequest>(event);
-    
 });

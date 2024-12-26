@@ -4,6 +4,7 @@
 	"version": "0.0.0",
 	"type": "module",
 	"main": "./dist/app-button.js",
+	"types": "./dist/index.d.ts",
 	"scripts": {
 		"dev": "yarn run -T vite",
 		"build": "yarn run -T vue-tsc -p '../../tsconfig.app.json' && yarn run -T vite build",

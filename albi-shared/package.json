@@ -10,8 +10,8 @@
 	],
 	"scripts": {
 		"build": "yarn workspaces foreach -p --worktree run build",
-		"storybook": "storybook dev -p 6006",
-		"build-storybook": "storybook build"
+		"storybook": "yarn build:shared && storybook dev -p 6006",
+		"build-storybook": "yarn build:shared && storybook build"
 	},
 	"devDependencies": {
 		"@chromatic-com/storybook": "3.2.3",
@@ -23,6 +23,7 @@
 		"@storybook/vue3-vite": "8.4.7",
 		"@vitejs/plugin-vue-jsx": "4.1.1",
 		"storybook": "8.4.7",
-		"vite-plugin-dts": "4.4.0"
+		"vite-plugin-dts": "4.4.0",
+		"vite-plugin-lib-inject-css": "2.1.1"
 	}
 }

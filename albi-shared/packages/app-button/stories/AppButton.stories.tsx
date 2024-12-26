@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/vue3';
 
-import { AppButton, AppButtonTheme } from '../src/lib';
+import { AppButton } from '../src/lib';
 import { defineComponent } from 'vue';
 import { fn } from '@storybook/test';
 
@@ -11,9 +11,9 @@ const meta: Meta<typeof AppButton> = {
 	argTypes: {
 		theme: {
 			control: 'select',
-			options: [AppButtonTheme.Primary, AppButtonTheme.Danger],
+			options: ['primary', 'danger'],
 			table: {
-				defaultValue: { summary: AppButtonTheme.Primary }
+				defaultValue: { summary: 'primary' }
 			}
 		},
 		disabled: {
@@ -37,14 +37,14 @@ type Story = StoryObj<typeof AppButton>;
 
 export const Primary: Story = {
 	args: {
-		theme: AppButtonTheme.Primary,
+		theme: 'primary',
 		disabled: false
 	}
 };
 
 export const Danger: Story = {
 	args: {
-		theme: AppButtonTheme.Danger,
+		theme: 'danger',
 		disabled: false
 	}
 };
