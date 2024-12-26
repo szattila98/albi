@@ -7,15 +7,13 @@
 <script setup lang="ts">
 import type { ButtonHTMLAttributes } from 'vue';
 
-export type AppButtonTheme = 'primary' | 'danger';
+type AppButtonTheme = 'primary' | 'danger';
 
 interface Props extends /* @vue-ignore */ ButtonHTMLAttributes {
 	theme?: AppButtonTheme;
 }
 
-withDefaults(defineProps<Props>(), {
-	theme: 'primary'
-});
+const { theme = 'primary' } = defineProps<Props>();
 </script>
 
 <style scoped lang="scss">

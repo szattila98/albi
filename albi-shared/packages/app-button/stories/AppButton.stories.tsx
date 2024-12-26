@@ -27,7 +27,7 @@ const meta: Meta<typeof AppButton> = {
 		return defineComponent({
 			components: { AppButton },
 			setup: () => ({ args }),
-			render: () => <AppButton {...args}>Default slot content</AppButton>
+			render: () => <AppButton {...args}>Aliquip irure magna</AppButton>
 		});
 	}
 };

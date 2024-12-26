@@ -20,6 +20,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@albi-shared/app-heading@workspace:albi-shared/packages/app-heading":
+  version: 0.0.0-use.local
+  resolution: "@albi-shared/app-heading@workspace:albi-shared/packages/app-heading"
+  dependencies:
+    "@albi-shared/style-utils": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
 "@albi-shared/style-utils@workspace:*, @albi-shared/style-utils@workspace:albi-shared/packages/style-utils":
   version: 0.0.0-use.local
   resolution: "@albi-shared/style-utils@workspace:albi-shared/packages/style-utils"
