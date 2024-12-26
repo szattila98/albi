@@ -28,6 +28,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@albi-shared/app-list@workspace:albi-shared/packages/app-list":
+  version: 0.0.0-use.local
+  resolution: "@albi-shared/app-list@workspace:albi-shared/packages/app-list"
+  dependencies:
+    "@albi-shared/style-utils": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
 "@albi-shared/app-text@workspace:albi-shared/packages/app-text":
   version: 0.0.0-use.local
   resolution: "@albi-shared/app-text@workspace:albi-shared/packages/app-text"

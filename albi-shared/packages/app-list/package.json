@@ -1,0 +1,14 @@
+{
+	"name": "@albi-shared/app-list",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"main": "./dist/app-list.js",
+	"types": "./dist/index.d.ts",
+	"scripts": {
+		"build": "yarn run -T vue-tsc -p '../../tsconfig.app.json' && yarn run -T vite build"
+	},
+	"dependencies": {
+		"@albi-shared/style-utils": "workspace:*"
+	}
+}
