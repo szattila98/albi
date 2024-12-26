@@ -9,7 +9,7 @@
 		"./packages/*"
 	],
 	"scripts": {
-		"build": "yarn workspaces foreach -p --worktree run build",
+		"build": "yarn workspaces foreach -p -t --worktree run build",
 		"storybook": "yarn build:shared && storybook dev -p 6006",
 		"build-storybook": "yarn build:shared && storybook build"
 	},

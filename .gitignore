@@ -45,3 +45,4 @@ lerna-debug.log*
 .yarn/*
 
 *storybook.log
+storybook-static
